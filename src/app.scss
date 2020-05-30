@@ -1,0 +1,42 @@
+.button {
+  border: unset;
+  padding: 12px 17px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.blue {
+  background: #2f82ff;
+  color: #fff;
+}
+
+.first-page {
+  text-align: center;
+  padding-top: 32vh;
+
+  .title {
+    font-size: 1.5em;
+    max-width: 15em;
+    margin: auto;
+  }
+
+  .sub-text {
+    font-size: 0.8em;
+    max-width: 39em;
+    margin: auto;
+    padding: 2em;
+    color: #2e2e2e;
+  }
+}
+
+.fadeIn-appear {
+  opacity: 0;
+}
+
+.fadeIn-appear.fadeIn-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}

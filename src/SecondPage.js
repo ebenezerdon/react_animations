@@ -2,10 +2,11 @@ import React from 'react';
 
 const SecondPage = ({ setHomepage }) => {
   return (
-    <>
-      <button onClick={() => setHomepage(true)}>Back</button>
-      <h1>Second Page</h1>
-    </>
+    <div class="second-page">
+      <button className="button" onClick={() => setHomepage(true)}>Back</button>
+      <p classsName="title">Your Plan,</p>
+      <p className="title">&nbsp; &nbsp; Your Planet</p>
+    </div>
   )
 }
 

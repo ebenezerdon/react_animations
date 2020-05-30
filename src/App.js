@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { CSSTransitionGroup } from 'react-transition-group'
 import FirstPage from './FirstPage';
 import SecondPage from './SecondPage';
 import './app.scss';

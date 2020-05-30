@@ -29,6 +29,7 @@
     margin: auto;
     padding: 2em;
     color: #2e2e2e;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
   }
 }
 
@@ -39,4 +40,13 @@
 .fadeIn-appear.fadeIn-appear-active {
   opacity: 1;
   transition: opacity .5s ease-in;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

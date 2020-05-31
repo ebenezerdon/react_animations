@@ -29,24 +29,79 @@
     margin: auto;
     padding: 2em;
     color: #2e2e2e;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
   }
 }
 
-.fadeIn-appear {
-  opacity: 0;
+.second-page {
+  .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5em;
+    font-weight: 500;
+    text-align: center;
+    margin: unset;
+    padding-top: 32vh;
+  }
+
+  .inner, .outer {
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    background: #29b1ff;
+  }
+
+  .inner:hover {
+    cursor: pointer;
+    background: #fff;
+  }
+
+  .circle1 {
+    top: 5em;
+    left: 25%;
+    background: #ceead6;
+    border: 1px solid #ceead6;
+  }
+
+  .circle2 {
+    top: 7em;
+    right: 20%;
+    background: #d2e3fc;
+    border: 1px solid #d2e3fc;
+  }
+
+  .circle3 {
+    bottom: 5em;
+    left: 10%;
+    background: #ffefc3;
+    border: 1px solid #ffefc3;
+  }
+
+  .circle4 {
+    bottom: 4em;
+    right: 20%;
+    background: #f8d2ce;
+    border: 1px solid #f8d2ce;
+  }
+
+  .outer {
+    transform: scale(2);
+    background: none;
+    animation-name: ripple;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
 }
 
-.fadeIn-appear.fadeIn-appear-active {
-  opacity: 1;
-  transition: opacity .5s ease-in;
-}
-
-@keyframes slideInFromLeft {
+@keyframes ripple {
   0% {
-    transform: translateX(-100%);
+    transform: scale(1.5);
+  }
+  70% {
+    transform: scale(2.5);
+    opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: scale(0);
+    opacity: 0;
   }
 }

@@ -12,6 +12,10 @@ const SecondPage = ({ setHomepage }) => {
         initial={{x: 100, y: -100}}
         animate={{x: 0, y: 0}}
         transition={{ ease: "easeOut", duration: 1.3 }}
+        drag={true}
+        dragConstraints={{ top: 1, bottom: 1, right: 1, left: 1 }}
+        dragElastic={1}
+        whileHover={{cursor: "pointer"}}
       >
         Your Plan, &nbsp; &nbsp; <br/> &nbsp; &nbsp; &nbsp; Your Planet
       </motion.h1>

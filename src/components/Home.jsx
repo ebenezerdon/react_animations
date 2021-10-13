@@ -6,7 +6,7 @@ const Home = () => {
   const history = useHistory()
 
   return (
-    <div className="first-page">
+    <div className="home">
       <motion.p
         className="title"
         initial={{ opacity: 0, y: 100 }}

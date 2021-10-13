@@ -1,19 +1,4 @@
-.button {
-  border: unset;
-  padding: 12px 17px;
-  border-radius: 5px;
-}
-
-.button:hover {
-  cursor: pointer;
-}
-
-.blue {
-  background: #2f82ff;
-  color: #fff;
-}
-
-.first-page {
+.home {
   text-align: center;
   padding-top: 32vh;
 
@@ -32,7 +17,7 @@
   }
 }
 
-.second-page {
+.getStarted {
   .title {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3.5em;
@@ -104,4 +89,19 @@
     transform: scale(0);
     opacity: 0;
   }
+}
+
+.button {
+  border: unset;
+  padding: 12px 17px;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.blue {
+  background: #2f82ff;
+  color: #fff;
 }

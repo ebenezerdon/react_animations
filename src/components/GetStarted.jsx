@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const GetStarted = () => {
   return (
-    <div className="second-page">
+    <div className="getStarted">
       <motion.h1
         className="title"
         initial={{ x: 100, y: -100 }}

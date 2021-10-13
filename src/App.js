@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
-import FirstPage from './FirstPage';
-import SecondPage from './SecondPage';
-import './app.scss';
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Home from './components/Home'
+import GetStarted from './components/GetStarted'
+import './app.scss'
 
 function App() {
-  const [onHomepage, setHomepage] = useState(true);
-
-  if (onHomepage) return <FirstPage setHomepage={setHomepage} />
-  else return <SecondPage setHomepage={setHomepage} />
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" component={Home} exact/>
+        <Route path="/get-started" component={GetStarted}/>
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

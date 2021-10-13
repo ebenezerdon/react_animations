@@ -1,14 +1,17 @@
-import React from 'react';
-import { motion } from "framer-motion"
+import React from 'react'
+import { motion } from 'framer-motion'
+import { useHistory } from 'react-router-dom'
 
-const FirstPage = ({ setHomepage }) => {
+const Home = () => {
+  const history = useHistory()
+
   return (
     <div className="first-page">
       <motion.p
         className="title"
-        initial={{opacity: 0, y: 100}}
-        animate={{ opacity: [0, 1], y: [100, 100, 0]}}
-        transition={{ ease: "easeOut", duration: 1 }}
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: [0, 1], y: [100, 100, 0] }}
+        transition={{ ease: 'easeOut', duration: 1 }}
       >
         Small changes can make a big impact on our planet
       </motion.p>
@@ -26,7 +29,7 @@ const FirstPage = ({ setHomepage }) => {
       </motion.p>
       <motion.button
         className="button blue"
-        onClick={() => setHomepage(false)}
+        onClick={() => history.push('/get-started')}
         initial={{opacity: 0, y: 180}}
         animate={{opacity: [0, 0, 0, 1], y: [180, 150, 150, 0]}}
         transition={{ ease: "easeOut", duration: 1.3 }}
@@ -37,4 +40,4 @@ const FirstPage = ({ setHomepage }) => {
   )
 }
 
-export default FirstPage;
+export default Home

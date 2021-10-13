@@ -18,20 +18,17 @@ const GetStarted = () => {
         Your Plan, &nbsp; &nbsp; <br/> &nbsp; &nbsp; &nbsp; Your Planet
       </motion.h1>
 
-      <Link to='/'>Home</Link>
+      <Link to='/' className="button">Home</Link>
 
-      <motion.div
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-      >
-        <div className="outer circle1" />
-        <div className="outer circle2" />
-        <div className="outer circle3" />
-        <div className="outer circle4"/>
-        <div className="inner circle1" />
-        <div className="inner circle2" />
-        <div className="inner circle3" />
-        <div className="inner circle4" />
+      <motion.div animate={{opacity: [0, 1]}}>
+        <div className="circle c1" />
+        <div className="circle c1 ripple" />
+        <div className="circle c2" />
+        <div className="circle c2 ripple" />
+        <div className="circle c3" />
+        <div className="circle c3 ripple" />
+        <div className="circle c4" />
+        <div className="circle c4 ripple"/>
       </motion.div>
     </div>
   )

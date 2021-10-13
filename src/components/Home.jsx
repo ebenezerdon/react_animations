@@ -28,7 +28,7 @@ const Home = () => {
         to help people and the planet thrive together.
       </motion.p>
       <motion.button
-        className="button blue"
+        className="button"
         onClick={() => history.push('/get-started')}
         initial={{opacity: 0, y: 180}}
         animate={{opacity: [0, 0, 0, 1], y: [180, 150, 150, 0]}}

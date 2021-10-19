@@ -77,23 +77,6 @@ body {
   .ripple {
     transform: scale(2);
     background: none;
-    animation-name: rippleAnimation;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-  }
-}
-
-@keyframes rippleAnimation {
-  0% {
-    transform: scale(1.5);
-  }
-  70% {
-    transform: scale(2.5);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(0);
-    opacity: 0;
   }
 }
 

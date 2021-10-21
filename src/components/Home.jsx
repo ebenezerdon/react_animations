@@ -18,8 +18,8 @@ const Home = () => {
       <motion.p
         className="sub-text"
         initial={{opacity: 0, y: 180}}
-        animate={{opacity: [0, 0, 0, 1], y: [180, 180, 0]}}
-        transition={{ ease: "easeOut", duration: 1.3 }}
+        animate={{opacity: [0, 1], y: [150, 0]}}
+        transition={{ ease: "easeOut", delay: 0.6 }}
       >
         We all want a healthy planet for today and tomorrow.
         The small choices we make each day can help us get
@@ -31,8 +31,8 @@ const Home = () => {
         className="button"
         onClick={() => history.push('/get-started')}
         initial={{opacity: 0, y: 180}}
-        animate={{opacity: [0, 0, 0, 1], y: [180, 150, 150, 0]}}
-        transition={{ ease: "easeOut", duration: 1.3 }}
+        animate={{opacity: [0, 1], y: [140, 0]}}
+        transition={{ ease: "easeOut", delay: 0.7, duration: 0.7 }}
       >
           Let's get started
       </motion.button>

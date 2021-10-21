@@ -18,7 +18,7 @@ const Home = () => {
       </p>
       <button
         className="button"
-        onClick={() => history.push('/get-started')}
+        onClick={() => history.push('/getStarted')}
       >
           Let's get started
       </button>

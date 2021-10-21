@@ -9,7 +9,6 @@ const Home = () => {
     <div className="home">
       <motion.p
         className="title"
-        initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: [0, 1], y: [100, 100, 0] }}
         transition={{ ease: 'easeOut', duration: 1 }}
       >
@@ -17,7 +16,6 @@ const Home = () => {
       </motion.p>
       <motion.p
         className="sub-text"
-        initial={{opacity: 0, y: 180}}
         animate={{opacity: [0, 1], y: [150, 0]}}
         transition={{ ease: "easeOut", delay: 0.6 }}
       >

@@ -27,7 +27,7 @@ const Home = () => {
       </motion.p>
       <motion.button
         className="button"
-        onClick={() => history.push('/get-started')}
+        onClick={() => history.push('/getStarted')}
         initial={{opacity: 0, y: 180}}
         animate={{opacity: [0, 1], y: [140, 0]}}
         transition={{ ease: "easeOut", delay: 0.7, duration: 0.7 }}
